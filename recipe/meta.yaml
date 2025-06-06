@@ -1,7 +1,7 @@
 {% set python_min = '3.10' %}
 {% set name = "control" %}
 {% set version = "0.10.1b" %}
-{% set sha256 = "3bba142c9274d896efda8c9a21aaf61dd38d673d6d40714a7989d143428e738c" %}
+{% set sha256 = "d0386fe551d6af78aeb5fde90bc0decb381d8977292eba4a810d1232507d578b" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/repagh/python-control/archive/refs/tags/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
